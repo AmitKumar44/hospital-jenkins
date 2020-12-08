@@ -30,7 +30,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootApplication
 @EnableCaching
-public class HospitalFrontDeskApplication implements CommandLineRunner {
+public class HospitalFrontDeskApplication  {
 
 	@Value("${endpoint.specialist}")
 	private String specialistUri;
@@ -43,7 +43,7 @@ public class HospitalFrontDeskApplication implements CommandLineRunner {
 		SpringApplication.run(HospitalFrontDeskApplication.class, args);
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 
@@ -51,7 +51,7 @@ public class HospitalFrontDeskApplication implements CommandLineRunner {
 		System.out.println("---------------------------------------------------------------------------------------");
 		fetchSpecialistTypeInXml();
 
-	}
+	}*/
 
 	private void fetchSpecialistTypeInJson() throws JsonProcessingException {
 
