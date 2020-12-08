@@ -16,7 +16,7 @@ class HospitalFrontDeskApplicationTests {
 	public static Logger logger = LoggerFactory.getLogger(HospitalFrontDeskApplicationTests.class);
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 		logger.info("Test case executed");
 		assertEquals(true, true);
 	}
